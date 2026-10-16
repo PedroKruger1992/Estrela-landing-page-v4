@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@theme {
+  /* Cadastrando as cores extraídas do logotipo da Estrela */
+  --color-brand-primary: #E27425;
+  --color-brand-dark: #3A3D40;
+  --color-brand-light: #F8FAFC;
+  --color-brand-card: #FFFFFF;
+}

@@ -4,7 +4,7 @@ import Services from '@/components/Services';
 
 const HomePage = () => {
   return (
-    <div className="bg-zinc-900 min-h-screen">
+    <div className="bg-brand-light min-h-screen text-brand-dark">
       <Navbar />
       <Hero />
       <Services />
