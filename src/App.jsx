@@ -1,6 +1,12 @@
-import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
-import Services from '@/components/Services';
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Services from "./components/Services";
+import Portfolio from "./components/Portfolio";
+
+
+
+
+
 
 const HomePage = () => {
   return (
@@ -8,6 +14,7 @@ const HomePage = () => {
       <Navbar />
       <Hero />
       <Services />
+      <Portfolio /> 
     </div>
   );
 };
