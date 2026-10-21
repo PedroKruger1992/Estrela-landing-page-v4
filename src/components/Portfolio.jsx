@@ -38,10 +38,10 @@ function Portfolio() {
       {/* Container com o efeito flex e scroll snapping do Tailwind */}
       <div 
         ref={carrosselRef}
-        className="flex overflow-x-auto snap-x snap-mandatory scrollbar-none gap-6 pb-4 scroll-smooth"
+        className="w-full flex flex-nowrap overflow-x-auto snap-x snap-mandatory scrollbar-none gap-6 pb-4 scroll-smooth"
       >
         {/* Card 1 */}
-        <div className="bg-brand-card border border-slate-200 rounded-xl p-6 shadow-sm snap-center min-w-[280px] md:min-w-[380px] flex-shrink-0 transition-transform hover:scale-102 duration-300">
+        <div className="bg-brand-card border border-slate-200 rounded-xl p-6 shadow-sm snap-center w-[85vw] max-w-[360px] flex-shrink-0 transition-transform hover:scale-102 duration-300">
           <div className="h-48 w-full bg-slate-200 rounded-lg mb-4 overflow-hidden">
             <img src="https://unsplash.com" alt="Trator" className="w-full h-full object-cover" />
           </div>
@@ -51,7 +51,7 @@ function Portfolio() {
         </div>
 
         {/* Card 2 */}
-        <div className="bg-brand-card border border-slate-200 rounded-xl p-6 shadow-sm snap-center min-w-[280px] md:min-w-[380px] flex-shrink-0 transition-transform hover:scale-102 duration-300">
+        <div className="bg-brand-card border border-slate-200 rounded-xl p-6 shadow-sm snap-center w-[85vw] max-w-[360px] flex-shrink-0 transition-transform hover:scale-102 duration-300">
           <div className="h-48 w-full bg-slate-200 rounded-lg mb-4 overflow-hidden">
             <img src="https://unsplash.com" alt="Escavação" className="w-full h-full object-cover" />
           </div>
@@ -61,7 +61,7 @@ function Portfolio() {
         </div>
 
         {/* Card 3 */}
-        <div className="bg-brand-card border border-slate-200 rounded-xl p-6 shadow-sm snap-center min-w-[280px] md:min-w-[380px] flex-shrink-0 transition-transform hover:scale-102 duration-300">
+        <div className="bg-brand-card border border-slate-200 rounded-xl p-6 shadow-sm snap-center w-[85vw] max-w-[360px] flex-shrink-0 transition-transform hover:scale-102 duration-300">
           <div className="h-48 w-full bg-slate-200 rounded-lg mb-4 overflow-hidden">
             <img src="https://unsplash.com" alt="Caminhão" className="w-full h-full object-cover" />
           </div>
