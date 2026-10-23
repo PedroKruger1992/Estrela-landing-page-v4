@@ -12,7 +12,7 @@ const ServicesSection = () => {
             </svg>
           </div>
           <h3 className="text-xl font-bold mb-2">Terraplenagem e Nivelamento</h3>
-          <p>Professionally handled earthworks and leveling services.</p>
+          <p>Preparamos o solo com precisão para que a sua obra comece sobre uma base nivelada e segura, sem retrabalho.</p>
         </div>
         <div className="bg-brand-card p-4 rounded-lg shadow-sm border border-slate-200 hover:scale-105 transition-transform">
           <div className="flex items-center justify-center mb-4">
@@ -21,7 +21,7 @@ const ServicesSection = () => {
             </svg>
           </div>
           <h3 className="text-xl font-bold mb-2">Escavação e Demolição</h3>
-          <p>Professional excavation and demolition services.</p>
+          <p>Escavação e demolição planejadas e executadas com segurança, para manter o cronograma da sua obra em dia.</p>
         </div>
         <div className="bg-brand-card p-4 rounded-lg shadow-sm border border-slate-200 hover:scale-105 transition-transform">
           <div className="flex items-center justify-center mb-4">
@@ -30,7 +30,7 @@ const ServicesSection = () => {
             </svg>
           </div>
           <h3 className="text-xl font-bold mb-2">Limpeza de Terrenos</h3>
-          <p>Efficient land clearing services to prepare your site.</p>
+          <p>Deixamos o terreno limpo e pronto para construir, com remoção de mato, entulho e vegetação.</p>
         </div>
       </div>
     </div>
