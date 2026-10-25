@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import Container from './Container';
 
 function Portfolio() {
   // Criamos uma referência para controlar a barra de rolagem do carrossel
@@ -30,18 +31,15 @@ function Portfolio() {
   }, []);
 
   return (
-    <section className="bg-brand-light py-16 px-6 max-w-7xl mx-auto overflow-hidden">
-      <h2 className="text-3xl font-bold text-brand-dark mb-8 text-center md:text-left">
-        Nossas Obras
-      </h2>
-      
-      {/* Container com o efeito flex e scroll snapping do Tailwind */}
-      <div 
+    <section className="bg-brand-light py-16 overflow-hidden">
+      <Container>
+        <h2 className="text-3xl font-bold text-brand-dark mb-8 text-center">Nossas Obras</h2>
+        <div
         ref={carrosselRef}
-        className="w-full flex flex-nowrap overflow-x-auto snap-x snap-mandatory scrollbar-none gap-6 pb-4 scroll-smooth"
+          className="grid grid-cols-1 md:grid-cols-3 gap-8"
       >
         {/* Card 1 */}
-        <div className="bg-brand-card border border-slate-200 rounded-xl p-6 shadow-sm snap-center w-[85vw] max-w-[360px] flex-shrink-0 transition-transform hover:scale-102 duration-300">
+          <div className="bg-brand-card border border-slate-200 rounded-xl p-6 shadow-sm snap-center transition-transform hover:scale-102 duration-300">
           <div className="h-48 w-full bg-slate-200 rounded-lg mb-4 overflow-hidden">
             <img src="https://unsplash.com" alt="Trator" className="w-full h-full object-cover" />
           </div>
@@ -51,7 +49,7 @@ function Portfolio() {
         </div>
 
         {/* Card 2 */}
-        <div className="bg-brand-card border border-slate-200 rounded-xl p-6 shadow-sm snap-center w-[85vw] max-w-[360px] flex-shrink-0 transition-transform hover:scale-102 duration-300">
+          <div className="bg-brand-card border border-slate-200 rounded-xl p-6 shadow-sm snap-center transition-transform hover:scale-102 duration-300">
           <div className="h-48 w-full bg-slate-200 rounded-lg mb-4 overflow-hidden">
             <img src="https://unsplash.com" alt="Escavação" className="w-full h-full object-cover" />
           </div>
@@ -61,7 +59,7 @@ function Portfolio() {
         </div>
 
         {/* Card 3 */}
-        <div className="bg-brand-card border border-slate-200 rounded-xl p-6 shadow-sm snap-center w-[85vw] max-w-[360px] flex-shrink-0 transition-transform hover:scale-102 duration-300">
+          <div className="bg-brand-card border border-slate-200 rounded-xl p-6 shadow-sm snap-center transition-transform hover:scale-102 duration-300">
           <div className="h-48 w-full bg-slate-200 rounded-lg mb-4 overflow-hidden">
             <img src="https://unsplash.com" alt="Caminhão" className="w-full h-full object-cover" />
           </div>
@@ -70,6 +68,7 @@ function Portfolio() {
           <p className="text-slate-600 text-sm">Remoção completa de vegetação rasteira, tocos e detritos para abertura de novas vias de acesso.</p>
         </div>
       </div>
+      </Container>
     </section>
   );
 }

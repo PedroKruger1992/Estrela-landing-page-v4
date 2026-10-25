@@ -1,8 +1,10 @@
 import React from 'react';
+import Container from './Container';
 
 const ServicesSection = () => {
   return (
-    <div className="container mx-auto p-4">
+    <section className="bg-white py-12">
+      <Container>
       <h2 className="text-3xl font-bold mb-8 text-center text-brand-dark">Nossos Serviços</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="bg-brand-card p-4 rounded-lg shadow-sm border border-slate-200 hover:scale-105 transition-transform">
@@ -30,10 +32,11 @@ const ServicesSection = () => {
             </svg>
           </div>
           <h3 className="text-xl font-bold mb-2">Limpeza de Terrenos</h3>
-          <p>Deixamos o terreno limpo e pronto para construir, com remoção de mato, entulho e vegetação.</p>
+            <p>Realizamos a limpeza completa dos terrenos, removendo resíduos e garantindo um ambiente de trabalho limpo e organizado.</p>
+          </div>
         </div>
-      </div>
-    </div>
+      </Container>
+    </section>
   );
 };
 
