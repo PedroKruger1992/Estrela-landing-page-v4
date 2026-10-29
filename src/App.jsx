@@ -1,11 +1,10 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
-import Portfolio from "./components/Portfolio";
+import AntesDepois from "./components/AntesDepois";
+import FaixaOrcamento from "./components/FaixaOrcamento";
+import Sobre from "./components/Sobre";
 import Footer from "./components/Footer";
-
-
-
 
 
 
@@ -15,7 +14,9 @@ const HomePage = () => {
       <Navbar />
       <Hero />
       <Services />
-      <Portfolio /> 
+      <AntesDepois />
+      <FaixaOrcamento />
+      <Sobre />
       <Footer />
     </div>
   );

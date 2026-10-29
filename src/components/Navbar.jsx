@@ -7,9 +7,9 @@ const Navbar = () => {
   const [aberto, setAberto] = useState(false);
 
   const links = [
-    { label: 'Início', href: '#/' },
-    { label: 'Serviços', href: '#services' },
-    { label: 'Sobre Nós', href: '#about' },
+    { label: 'Início', href: '#inicio' },
+    { label: 'Serviços', href: '#servicos' },
+    { label: 'Sobre', href: '#sobre' },
   ];
 
   return (
@@ -31,7 +31,7 @@ const Navbar = () => {
               </li>
             ))}
           <li>
-            <BotaoWhatsApp texto="Orçamento" className="font-semibold" />
+            <BotaoWhatsApp apenasIcone variante="verde" />
           </li>
         </ul>
       </div>
@@ -45,7 +45,7 @@ const Navbar = () => {
               </li>
             ))}
             <li onClick={() => setAberto(false)}>
-              <BotaoWhatsApp texto="Orçamento" className="font-semibold" />
+              <BotaoWhatsApp apenasIcone variante="verde" />
             </li>
           </ul>
         )}

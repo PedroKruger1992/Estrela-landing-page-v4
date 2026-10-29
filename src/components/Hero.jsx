@@ -4,7 +4,7 @@ import Container from './Container';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[75vh] md:min-h-[85vh] flex items-end overflow-hidden text-white">
+    <section id="inicio" className="relative min-h-[75vh] md:min-h-[85vh] flex items-end overflow-hidden text-white">
       <img src="/hero.jpg" alt="" className="absolute inset-0 w-full h-full object-cover object-[62%_center] md:object-center" />
       <div className="absolute inset-0 bg-linear-to-t from-black/85 via-black/35 to-black/10" />
       <div className="absolute inset-x-0 top-0 h-40 bg-linear-to-b from-black/30 to-transparent" />
