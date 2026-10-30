@@ -6,17 +6,19 @@ import AntesDepois from "./components/AntesDepois";
 import FaixaOrcamento from "./components/FaixaOrcamento";
 import Sobre from "./components/Sobre";
 import Footer from "./components/Footer";
-import WhatsAppFlutuante from "./components/WhatsAppFlutuante";
+import WhatsAppFlutuante from "./components/WhatsAppFlutuante.jsx";
 
 const App = () => {
   return (
     <div className="bg-brand-light min-h-screen text-brand-dark">
       <Navbar />
-      <Hero />
-      <Services />
-      <AntesDepois />
+      <main>
+        <Hero />
+        <Services />
+        <AntesDepois />
       <FaixaOrcamento />
       <Sobre />
+      </main>
       <Footer />
       <WhatsAppFlutuante />
     </div>

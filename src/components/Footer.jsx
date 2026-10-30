@@ -2,8 +2,10 @@ import React from 'react';
 import BotaoWhatsApp from './BotaoWhatsApp';
 import Container from './Container';
 
-const WHATSAPP = '5500000000000';
-const WHATSAPP_EXIBIDO = '(00) 00000-0000';
+const WHATSAPP = '5543999432282';
+const WHATSAPP_EXIBIDO = '(43) 99943-2282';
+const TELEFONE2 = '5543991142309';
+const TELEFONE2_EXIBIDO = '(43) 99114-2309';
 
 function Footer() {
   const ano = new Date().getFullYear();
@@ -26,7 +28,8 @@ function Footer() {
         </div>
           <div className="md:justify-self-end">
           <h4 className="text-sm font-semibold uppercase tracking-wider text-brand-primary">Contato</h4>
-          <p className="mt-3 text-sm text-brand-light/70">WhatsApp: {WHATSAPP_EXIBIDO}</p>
+          <p className="mt-3 text-sm text-brand-light/70">{WHATSAPP_EXIBIDO}</p>
+          <p className="text-sm text-brand-light/70"><a href={`tel:+${TELEFONE2}`}>{TELEFONE2_EXIBIDO}</a></p>
           <BotaoWhatsApp texto="Chamar no WhatsApp" className="mt-4" />
         </div>
       </div>

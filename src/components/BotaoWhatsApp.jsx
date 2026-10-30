@@ -1,6 +1,6 @@
 import React from 'react';
 
-const WHATSAPP = '5500000000000';
+const WHATSAPP = '5543999432282';
 const MENSAGEM = 'Olá! Gostaria de solicitar um orçamento.';
 
 function BotaoWhatsApp({ texto = 'Solicitar Orçamento', className = '', variante = 'padrao', icone = false, apenasIcone = false }) {
