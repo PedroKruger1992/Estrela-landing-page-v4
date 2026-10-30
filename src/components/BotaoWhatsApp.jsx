@@ -7,7 +7,8 @@ function BotaoWhatsApp({ texto = 'Solicitar Orçamento', className = '', variant
   const estilo = variante === 'claro' ? 'bg-white text-brand-primary hover:bg-slate-100' : 'bg-brand-primary text-white hover:bg-brand-primary-dark';
 
   if (apenasIcone) {
-    const verde = variante === 'verde';
+    const verde = variante === 'verde' || variante === 'flutuante';
+    const grande = variante === 'flutuante';
 
     return (
       <a
@@ -16,9 +17,9 @@ function BotaoWhatsApp({ texto = 'Solicitar Orçamento', className = '', variant
       rel="noopener noreferrer"
         aria-label="Falar pelo WhatsApp"
         title="Falar pelo WhatsApp"
-        className={`inline-flex items-center justify-center ${verde ? 'h-12 w-12 bg-[#25D366]' : 'h-16 w-16 bg-white'} rounded-full shadow-lg hover:scale-105 transition-transform ${className}`}
+        className={`inline-flex items-center justify-center ${verde ? `${grande ? 'h-14 w-14 bg-[#25D366]' : 'h-12 w-12 bg-[#25D366]'}` : 'h-16 w-16 bg-white'} rounded-full shadow-lg hover:scale-105 transition-transform ${className}`}
     >
-        <img src={verde ? '/whatsapp-branco.png' : '/whatsapp.png'} alt="" className={verde ? 'h-7 w-7' : 'h-9 w-9'} />
+        <img src={verde ? grande ? '/whatsapp-branco.png' : '/whatsapp-branco.png' : '/whatsapp.png'} alt="" className={verde ? grande ? 'h-8 w-8' : 'h-7 w-7' : 'h-9 w-9'} />
     </a>
   );
 }

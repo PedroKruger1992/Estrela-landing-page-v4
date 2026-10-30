@@ -13,7 +13,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-brand-dark/35 backdrop-blur-md p-4 border-b border-white/10 py-1">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-brand-dark/20 backdrop-blur-md p-4 border-b border-white/10 py-1">
       <Container>
         <div className="flex justify-between items-center py-2">
         <a href="#" className="text-brand-primary text-xl font-bold">
@@ -44,9 +44,6 @@ const Navbar = () => {
                 </a>
               </li>
             ))}
-            <li onClick={() => setAberto(false)}>
-              <BotaoWhatsApp apenasIcone variante="verde" />
-            </li>
           </ul>
         )}
       </Container>
