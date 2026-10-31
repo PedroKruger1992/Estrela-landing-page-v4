@@ -19,7 +19,8 @@ function Footer() {
           <p className="mt-3 text-sm text-brand-light/70 max-w-xs">Terraplenagem, escavação e nivelamento com precisão e segurança, do início ao fim da sua obra.</p>
         </div>
           <div className="md:justify-self-center">
-          <h4 className="text-sm font-semibold uppercase tracking-wider text-brand-primary">Serviços</h4>
+
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-orange-400">Serviços</h4>
           <ul className="mt-3 space-y-2 text-sm text-brand-light/70">
             <li>Terraplenagem e Nivelamento</li>
             <li>Escavação e Demolição</li>
@@ -27,7 +28,8 @@ function Footer() {
           </ul>
         </div>
           <div className="md:justify-self-end">
-          <h4 className="text-sm font-semibold uppercase tracking-wider text-brand-primary">Contato</h4>
+
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-orange-400">Contato</h4>
           <p className="mt-3 text-sm text-brand-light/70">{WHATSAPP_EXIBIDO}</p>
           <p className="text-sm text-brand-light/70"><a href={`tel:+${TELEFONE2}`}>{TELEFONE2_EXIBIDO}</a></p>
           <BotaoWhatsApp texto="Chamar no WhatsApp" className="mt-4" />
@@ -36,11 +38,12 @@ function Footer() {
       </Container>
       <Container>
       <div className="border-t border-white/10">
-          <p className="py-4 text-xs text-brand-light/50 text-center">© {ano} Estrela Terraplenagem. Todos os direitos reservados.</p>
+
+          <p className="py-4 text-xs text-brand-light/70 text-center">© {ano} Estrela Terraplenagem. Todos os direitos reservados.</p>
       </div>
       </Container>
     </footer>
   );
 }
+export default Footer; 
 
-export default Footer;

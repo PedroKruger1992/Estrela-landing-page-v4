@@ -43,7 +43,7 @@ function AntesDepois() {
                 </figure>
                 <figure className="relative">
                   <img src={obra.depois} alt={`Depois: ${obra.titulo}`} loading="lazy" className="w-full h-40 md:h-52 object-cover rounded-lg" />
-                  <figcaption className="absolute top-2 left-2 bg-brand-primary text-white text-xs font-semibold px-2 py-1 rounded">DEPOIS</figcaption>
+                  <figcaption className="absolute top-2 left-2 bg-brand-action text-white text-xs font-semibold px-2 py-1 rounded">DEPOIS</figcaption>
                 </figure>
               </div>
               <h3 className="mt-4 text-lg font-semibold text-brand-dark">{obra.titulo}</h3>

@@ -4,7 +4,7 @@ import BotaoWhatsApp from './BotaoWhatsApp';
 
 const FaixaOrcamento = () => {
   return (
-    <section className="bg-brand-primary text-white py-12">
+    <section className="bg-brand-action text-white py-12">
       <Container>
         <div className="flex flex-col items-center gap-6 text-center">
           <div>

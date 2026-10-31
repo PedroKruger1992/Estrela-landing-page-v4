@@ -4,7 +4,7 @@ const WHATSAPP = '5543999432282';
 const MENSAGEM = 'Olá! Gostaria de solicitar um orçamento.';
 
 function BotaoWhatsApp({ texto = 'Solicitar Orçamento', className = '', variante = 'padrao', icone = false, apenasIcone = false }) {
-  const estilo = variante === 'claro' ? 'bg-white text-brand-primary hover:bg-slate-100' : 'bg-brand-primary text-white hover:bg-brand-primary-dark';
+  const estilo = variante === 'claro' ? 'bg-white text-brand-primary hover:bg-slate-100' : 'bg-brand-action text-white hover:bg-brand-primary-dark';
 
   if (apenasIcone) {
     const verde = variante === 'verde' || variante === 'flutuante';
