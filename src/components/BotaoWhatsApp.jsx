@@ -3,6 +3,14 @@ import React from 'react';
 const WHATSAPP = '5543999432282';
 const MENSAGEM = 'Olá! Gostaria de solicitar um orçamento.';
 
+function registrarConversao() {
+  if (typeof window.gtag === 'function') {
+    window.gtag('event', 'conversion', {
+      send_to: 'AW-18547115183/7njeCMCyma8dEK-J-otF',
+    });
+  }
+}
+
 function BotaoWhatsApp({ texto = 'Solicitar Orçamento', className = '', variante = 'padrao', icone = false, apenasIcone = false }) {
   const estilo = variante === 'claro' ? 'bg-white text-brand-primary hover:bg-slate-100' : 'bg-brand-action text-white hover:bg-brand-primary-dark';
 
@@ -15,6 +23,7 @@ function BotaoWhatsApp({ texto = 'Solicitar Orçamento', className = '', variant
       href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(MENSAGEM)}`}
       target="_blank"
       rel="noopener noreferrer"
+        onClick={registrarConversao}
         aria-label="Falar pelo WhatsApp"
         title="Falar pelo WhatsApp"
         className={`inline-flex items-center justify-center ${verde ? `${grande ? 'h-14 w-14 bg-[#25D366]' : 'h-12 w-12 bg-[#25D366]'}` : 'h-16 w-16 bg-white'} rounded-full shadow-lg hover:scale-105 transition-transform ${className}`}
@@ -29,6 +38,7 @@ function BotaoWhatsApp({ texto = 'Solicitar Orçamento', className = '', variant
       href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(MENSAGEM)}`}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={registrarConversao}
       className={`inline-flex items-center gap-2 py-2 px-4 rounded ${estilo} ${className}`}
     >
       {icone && <img src="/whatsapp.png" alt="" className="h-5 w-5" />}
